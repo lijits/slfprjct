@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jophio Jewellers | Fine Luxury</title>
+
+  <!-- Typography: Luxury Serif & Sans-Serif Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS & Custom CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="1csssstle.css">
+
+  <style>
+    .brand-title, h1, h2, h3, h4, h5 {
+      font-family: 'Playfair Display', Georgia, serif;
+      letter-spacing: 1.2px;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="navbar navbar-expand-lg sticky-top custom-navbar">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="one.html">
+        <img src="lk1.jpg" alt="Jophio Logo" class="brand-logo" onerror="this.src='https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=100&q=80'">
+        <div class="brand-title m-0 fs-3 fw-bold">
+          <span class="gold-text">JOPHIO</span> <span class="light-gold-text">JEWELLERS</span>
+        </div>
+      </a>
+      <button class="navbar-toggler custom-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-lg-4 ms-auto text-uppercase fs-6">
+          <li class="nav-item"><a class="nav-link gold-text" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link gold-text" href="#collections">Collections</a></li>
+          <li class="nav-item"><a class="nav-link gold-text" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link gold-text" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link gold-text" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Announcement Marquee Ticker -->
+  <div class="ticker-wrapper" id="tickerWrapper">
+    <div class="ticker-content" id="tickerContent">
+      <span>✦ Diamond Rings</span>
+      <span>✦ Bridal Collections</span>
+      <span>✦ Gold Bangles</span>
+      <span>✦ Elegant Earrings</span>
+      <span>✦ Designer Pendants</span>
+      <span>✦ Silver Jewellery</span>
+      <span>✦ Gold Necklaces</span>
+      <span>✦ Diamond Rings</span>
+      <span>✦ Bridal Collections</span>
+      <span>✦ Gold Bangles</span>
+      <span>✦ Elegant Earrings</span>
+      <span>✦ Designer Pendants</span>
+      <span>✦ Silver Jewellery</span>
+      <span>✦ Gold Necklaces</span>
+    </div>
+  </div>
+
+  <!-- Parallax Content Wrapper -->
+  <div class="parallax-background-wrapper">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center justify-content-center position-relative overflow-hidden py-5">
+      <div class="hero-card text-center p-4 p-md-5 z-1">
+        <span class="sub-headline gold-text tracking-widest text-uppercase">Exclusive Craftsmanship</span>
+        <h1 class="gold-text display-4 fw-bold my-3">HANDCRAFTED LUXURY</h1>
+        <p class="fst-italic text-light mb-4 fs-5 opacity-90">Elegance that shines with you.</p>
+        <a href="#collections" class="btn btn-explore">EXPLORE COLLECTIONS</a>
+      </div>
+    </section>
+
+    <!-- Storefront Collections Product Grid -->
+    <section id="collections" class="collections-section py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h2 class="gold-text display-6 fw-bold mb-3">OUR EXCLUSIVE COLLECTIONS</h2>
+          <p class="text-light opacity-75 max-w-600 mx-auto fs-6">
+            Explore handcrafted gold pieces, fine diamond craftsmanship, and luxury sets across our boutique display.
+          </p>
+        </div>
+
+        <!-- Showcase Grid -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          
+          <!-- 1. Diamond Rings -->
+          <div class="col">
+            <div class="card product-card h-100 d-flex flex-column">
+              <div class="card-img-wrapper overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=600&q=80" alt="Solitaire Diamond Ring" class="card-img-top product-img">
+              </div>
+              <div class="card-body text-center p-4 d-flex flex-column justify-content-between flex-grow-1">
+                <div>
+                  <h5 class="card-title gold-text fw-bold mb-2">Solitaire Diamond Ring</h5>
+                  <p class="card-text text-secondary small mb-4">18K White Gold with handcrafted brilliant-cut diamond setting.</p>
+                </div>
+                <button class="btn btn-sm btn-explore w-100 mt-auto">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Bridal Set -->
+          <div class="col">
+            <div class="card product-card h-100 d-flex flex-column">
+              <div class="card-img-wrapper overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=600&q=80" alt="Royal Heritage Bridal Set" class="card-img-top product-img">
+              </div>
+              <div class="card-body text-center p-4 d-flex flex-column justify-content-between flex-grow-1">
+                <div>
+                  <h5 class="card-title gold-text fw-bold mb-2">Royal Heritage Bridal Set</h5>
+                  <p class="card-text text-secondary small mb-4">22K Fine Gold traditional centerpiece with emerald embellishments.</p>
+                </div>
+                <button class="btn btn-sm btn-explore w-100 mt-auto">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Gold Bangles -->
+          <div class="col">
+            <div class="card product-card h-100 d-flex flex-column">
+              <div class="card-img-wrapper overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80" alt="Classic Filigree Bangles" class="card-img-top product-img">
+              </div>
+              <div class="card-body text-center p-4 d-flex flex-column justify-content-between flex-grow-1">
+                <div>
+                  <h5 class="card-title gold-text fw-bold mb-2">Classic Filigree Bangles</h5>
+                  <p class="card-text text-secondary small mb-4">Intricately carved 22K gold bangle stack with modern gloss finish.</p>
+                </div>
+                <button class="btn btn-sm btn-explore w-100 mt-auto">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Elegant Earrings -->
+          <div class="col">
+            <div class="card product-card h-100 d-flex flex-column">
+              <div class="card-img-wrapper overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=600&q=80" alt="Chandelier Drop Earrings" class="card-img-top product-img">
+              </div>
+              <div class="card-body text-center p-4 d-flex flex-column justify-content-between flex-grow-1">
+                <div>
+                  <h5 class="card-title gold-text fw-bold mb-2">Chandelier Drop Earrings</h5>
+                  <p class="card-text text-secondary small mb-4">Dazzling diamond studs with articulated gold chandelier drops.</p>
+                </div>
+                <button class="btn btn-sm btn-explore w-100 mt-auto">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Designer Pendants -->
+          <div class="col">
+            <div class="card product-card h-100 d-flex flex-column">
+              <div class="card-img-wrapper overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=600&q=80" alt="Aura Diamond Pendant" class="card-img-top product-img">
+              </div>
+              <div class="card-body text-center p-4 d-flex flex-column justify-content-between flex-grow-1">
+                <div>
+                  <h5 class="card-title gold-text fw-bold mb-2">Aura Diamond Pendant</h5>
+                  <p class="card-text text-secondary small mb-4">Minimalist solitaire pendant suspended on a fine 18K gold chain.</p>
+                </div>
+                <button class="btn btn-sm btn-explore w-100 mt-auto">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Silver Jewellery -->
+          <div class="col">
+            <div class="card product-card h-100 d-flex flex-column">
+              <div class="card-img-wrapper overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=600&q=80" 
+                     alt="Sterling Silver Cuffs" 
+                     class="card-img-top product-img" 
+                     onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=600&q=80';">
+              </div>
+              <div class="card-body text-center p-4 d-flex flex-column justify-content-between flex-grow-1">
+                <div>
+                  <h5 class="card-title gold-text fw-bold mb-2">Sterling Silver Cuffs</h5>
+                  <p class="card-text text-secondary small mb-4">Handcrafted 925 sterling silver artisan bracelet with anti-tarnish finish.</p>
+                </div>
+                <button class="btn btn-sm btn-explore w-100 mt-auto">View Details</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Gold Necklaces -->
+          <div class="col">
+            <div class="card product-card h-100 d-flex flex-column">
+              <div class="card-img-wrapper overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=600&q=80" alt="Empress Gold Choker" class="card-img-top product-img">
+              </div>
+              <div class="card-body text-center p-4 d-flex flex-column justify-content-between flex-grow-1">
+                <div>
+                  <h5 class="card-title gold-text fw-bold mb-2">Empress Gold Choker</h5>
+                  <p class="card-text text-secondary small mb-4">Bold 24K gold-plated woven choker necklace designed for modern luxury.</p>
+                </div>
+                <button class="btn btn-sm btn-explore w-100 mt-auto">View Details</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+<section id="gallery" class="py-5 bg-dark text-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="text-uppercase tracking-wide text-warning small mb-1">Boutique Showcase</p>
+      <h2 class="display-5 fw-bold text-gold">THE JOPHIO GALLERY</h2>
+      <p class="text-muted">A visual glimpse into our handcrafted luxury masterpieces, custom studio designs, and flagship showroom highlights.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Gallery Item 1 -->
+      <div class="col-md-4">
+        <div class="gallery-card position-relative overflow-hidden rounded shadow">
+          <img src="lk2.png" class="img-fluid w-100 object-fit-cover" alt="Heritage Exhibition" style="height: 280px;">
+          <div class="gallery-overlay p-3 position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-75 text-white">
+            <h5 class="mb-0 text-warning">Heritage Exhibition</h5>
+            <small class="text-muted">Showroom Studio Feature</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 2 -->
+      <div class="col-md-4">
+        <div class="gallery-card position-relative overflow-hidden rounded shadow">
+          <img src="lk6.webp" class="img-fluid w-100 object-fit-cover" alt="Bridal Masterpieces" style="height: 280px;">
+          <div class="gallery-overlay p-3 position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-75 text-white">
+            <h5 class="mb-0 text-warning">Bridal Masterpieces</h5>
+            <small class="text-muted">Bespoke Gold Collection</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 3 -->
+      <div class="col-md-4">
+        <div class="gallery-card position-relative overflow-hidden rounded shadow">
+          <img src="lk5.webp" class="img-fluid w-100 object-fit-cover" alt="Artisan Filigree" style="height: 280px;">
+          <div class="gallery-overlay p-3 position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-75 text-white">
+            <h5 class="mb-0 text-warning">Artisan Filigree</h5>
+            <small class="text-muted">Custom Bangles & Ornaments</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 4 -->
+      <div class="col-md-6">
+        <div class="gallery-card position-relative overflow-hidden rounded shadow">
+          <img src="lk7.avif" class="img-fluid w-100 object-fit-cover" alt="Solitaire Diamond Suite" style="height: 300px;">
+          <div class="gallery-overlay p-3 position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-75 text-white">
+            <h5 class="mb-0 text-warning">Solitaire Diamond Suite</h5>
+            <small class="text-muted">Certified Cut Diamonds</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Item 5 -->
+      <div class="col-md-6">
+        <div class="gallery-card position-relative overflow-hidden rounded shadow">
+          <img src="lk8.avif" class="img-fluid w-100 object-fit-cover" alt="Royal Heritage Ornaments" style="height: 300px;">
+          <div class="gallery-overlay p-3 position-absolute bottom-0 start-0 end-0 bg-dark bg-opacity-75 text-white">
+            <h5 class="mb-0 text-warning">Royal Heritage Ornaments</h5>
+            <small class="text-muted">Ethically Sourced Gold & Gemstones</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Dedicated About Us Section -->
+    <section id="about" class="about-section py-5">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 text-center text-lg-start">
+            <span class="sub-headline gold-text tracking-widest text-uppercase">Our Story</span>
+            <h2 class="gold-text display-6 fw-bold my-3">CRAFTING LEGACIES SINCE 1998</h2>
+            <p class="text-light opacity-75 lead fs-6">
+              At Jophio Jewellers, we believe that true luxury lies in timeless artistry. Every piece in our boutique display is designed with precision and handcrafted using ethically sourced gemstones and pure precious metals.
+            </p>
+            <p class="text-secondary small">
+              Our master artisans combine centuries-old goldsmith techniques with modern aesthetics to deliver bespoke jewelry that celebrates life's most precious milestones.
+            </p>
+            <div class="row text-center mt-4 g-3">
+              <div class="col-4">
+                <div class="stat-box border border-gold-subtle p-3">
+                  <h4 class="gold-text fw-bold m-0">25+</h4>
+                  <small class="text-secondary">Years</small>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="stat-box border border-gold-subtle p-3">
+                  <h4 class="gold-text fw-bold m-0">100%</h4>
+                  <small class="text-secondary">Certified Gold</small>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="stat-box border border-gold-subtle p-3">
+                  <h4 class="gold-text fw-bold m-0">15k+</h4>
+                  <small class="text-secondary">Clients</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div class="about-graphic-box p-5 border border-warning text-center bg-dark">
+              <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12,2 15,9 22,9 17,14 19,21 12,17 5,21 7,14 2,9 9,9"/>
+              </svg>
+              <h5 class="gold-text mt-3 fw-bold">Uncompromising Quality</h5>
+              <p class="text-secondary small m-0">Every diamond is individually inspected and BIS Hallmarked for authenticity.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer & Contact Section -->
+    <footer class="footer py-5 px-4" id="contact">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="brand-title mb-2 fs-4 fw-bold">
+              <span class="gold-text">JOPHIO</span> <span class="light-gold-text">JEWELLERS</span>
+            </div>
+            <p class="text-secondary small mb-4">Crafting fine luxury jewelry for your most cherished moments.</p>
+            
+            <!-- Updated Contact Details Panel -->
+            <div class="contact-details-box p-3 border border-gold-subtle rounded-0 bg-dark mb-3">
+              <h6 class="gold-text fw-bold text-uppercase mb-3">Store Details</h6>
+              <p class="text-light small mb-2 d-flex align-items-center gap-2">
+                <span>📍</span> <strong>Location:</strong> Jophio Jewellers, Trivandrum
+              </p>
+              <p class="text-light small mb-2 d-flex align-items-center gap-2">
+                <span>📞</span> <strong>Phone:</strong> <a href="tel:+917904791956" class="text-light text-decoration-none">+91 7904791956</a>
+              </p>
+              <p class="text-light small mb-0 d-flex align-items-center gap-2">
+                <span>✉️</span> <strong>Email:</strong> <a href="mailto:lijijomijomi@gmail.com" class="text-light text-decoration-none">lijijomijomi@gmail.com</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <h5 class="gold-text mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#home" class="text-secondary text-decoration-none hover-gold">Home</a></li>
+              <li class="mb-2"><a href="#collections" class="text-secondary text-decoration-none hover-gold">Collections</a></li>
+              <li class="mb-2"><a href="#gallery" class="text-secondary text-decoration-none hover-gold">Gallery</a></li>
+              <li class="mb-2"><a href="#about" class="text-secondary text-decoration-none hover-gold">About Us</a></li>
+              <li class="mb-2"><a href="#contact" class="text-secondary text-decoration-none hover-gold">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-5">
+            <h5 class="gold-text mb-3">Get In Touch</h5>
+            <form id="contactForm" novalidate>
+              <div class="mb-3">
+                <input type="text" id="custName" class="form-control bg-dark text-light border-gold-subtle" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" id="custEmail" class="form-control bg-dark text-light border-gold-subtle" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                <textarea id="custMessage" class="form-control bg-dark text-light border-gold-subtle" rows="3" placeholder="Your Inquiry or Custom Order..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-explore w-100 py-2">Send Message</button>
+            </form>
+            <div id="formAlert" class="mt-2 text-center fw-bold d-none"></div>
+          </div>
+        </div>
+
+        <div class="border-top border-secondary mt-5 pt-3 text-center">
+          <p class="text-secondary small mb-1">&copy; 2026 Jophio Jewellers. All Rights Reserved.</p>
+          <p class="gold-text small mb-0">Designed & Developed by <strong>LIJI.T.S</strong></p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="btn btn-warning rounded-circle position-fixed bottom-0 end-0 m-4 d-none z-3" title="Go to top">
+    ▲
+  </button>
+
+  <!-- Single Bootstrap 5 JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="1jsf.js"></script>
+</body>
+</html>

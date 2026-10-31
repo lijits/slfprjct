@@ -1,0 +1,295 @@
+/* Smooth Scrolling Across Sections */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base Layout & Typography Defaults */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0b0b0b;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Navigation Bar */
+.custom-navbar {
+  background-color: rgba(11, 11, 11, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  transition: all 0.3s ease;
+}
+
+.custom-navbar.navbar-scrolled {
+  background-color: #000000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+  border-bottom: 1px solid #d4af37;
+}
+
+.brand-logo {
+  height: 44px;
+  width: auto;
+  border-radius: 2px;
+  border: 1px solid #d4af37;
+  padding: 2px;
+  background-color: #111111;
+  object-fit: contain;
+}
+
+.brand-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.gold-text {
+  color: #d4af37 !important;
+}
+
+.light-gold-text {
+  color: #f3e5ab !important;
+}
+
+.tracking-widest {
+  letter-spacing: 3px;
+  font-size: 0.85rem;
+}
+
+.nav-link {
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover, 
+.hover-gold:hover {
+  color: #ffffff !important;
+}
+
+/* Announcement Marquee Ticker */
+.ticker-wrapper {
+  background-color: #141414;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  position: relative;
+  z-index: 10;
+}
+
+.ticker-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 35s linear infinite;
+}
+
+.ticker-content span {
+  color: #d4af37;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0 25px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Parallax Background Layer Container */
+.parallax-background-wrapper {
+  background: linear-gradient(rgba(11, 11, 11, 0.92), rgba(11, 11, 11, 0.92)), url('lk2.png') no-repeat center top / cover;
+  background-attachment: fixed;
+  width: 100%;
+}
+
+/* Hero Section with Custom Background Image */
+.hero-section {
+  min-height: 85vh;
+  padding: 80px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+              url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1920&q=80') no-repeat center center / cover;
+}
+
+.hero-card {
+  background: rgba(12, 12, 12, 0.92);
+  border: 1px solid #d4af37;
+  max-width: 620px;
+  width: 100%;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Custom Call-to-Action Button */
+.btn-explore {
+  background-color: #d4af37;
+  color: #0b0b0b;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  border: 1px solid #d4af37;
+  border-radius: 0;
+  padding: 12px 24px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-explore:hover {
+  background-color: transparent;
+  color: #d4af37;
+  border-color: #d4af37;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.4);
+}
+
+/* Collections Grid Section */
+.collections-section {
+  background-color: rgba(11, 11, 11, 0.6);
+}
+
+/* Product Cards & Micro-interactions */
+.product-card {
+  background-color: rgba(18, 18, 18, 0.95);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 0;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  border-color: #d4af37;
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.15);
+}
+
+.card-img-wrapper {
+  height: 260px;
+  background-color: #141414;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.08);
+}
+
+/* Gallery Section Styling */
+.gallery-section {
+  background-color: rgba(8, 8, 8, 0.85);
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.gallery-card {
+  height: 280px;
+  background-color: #111111;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.1) 60%);
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .gallery-img {
+  transform: scale(1.06);
+}
+
+.gallery-card:hover {
+  border-color: #d4af37 !important;
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.25);
+}
+
+/* Store Contact Details Box */
+.contact-details-box {
+  background-color: rgba(18, 18, 18, 0.8);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* About & Highlights Section */
+.stat-box {
+  background-color: rgba(18, 18, 18, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-3px);
+  border-color: #d4af37 !important;
+}
+
+.about-graphic-box {
+  background-color: #121212;
+  border-color: rgba(212, 175, 55, 0.4) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Form Inputs & Custom Controls */
+.border-gold-subtle {
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.border-gold-subtle:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+  outline: none;
+}
+
+/* Footer Container */
+.footer {
+  background-color: #050505;
+  border-top: 1px solid #d4af37;
+}
+
+.max-w-600 {
+  max-width: 600px;
+}
+
+/* Mobile Toggler Custom Gold Accent */
+.custom-toggler {
+  border-color: #d4af37 !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23d4af37' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/* Responsive Overrides */
+@media (max-width: 991.88px) {
+  .navbar-collapse {
+    background-color: #0b0b0b;
+    padding: 15px;
+    border-bottom: 1px solid #d4af37;
+  }
+}
+
+/* Custom Placeholder Styling */
+.form-control::placeholder {
+  color: rgba(212, 175, 55, 0.7) !important; /* Elegant Gold Placeholder */
+  opacity: 1; /* Ensures visibility across all browsers */
+}
+
+.form-control:focus::placeholder {
+  color: rgba(255, 255, 255, 0.4) !important; /* Soft white on input click */
+}
